@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #e0e0e0;
+}
+
+.loginBox {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #666;
+  font-size: 0.9em;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.inputError {
+  border-color: #e53e3e;
+}
+
+.validationError {
+  color: #e53e3e;
+  font-size: 0.8em;
+  margin-top: 5px;
+  display: block;
+}
+
+.button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover:not(:disabled) {
+  background-color: #005bb5;
+}
+
+.button:disabled {
+  background-color: #a0aec0;
+  cursor: not-allowed;
+}
+
+.apiError {
+  color: #e53e3e;
+  text-align: center;
+  margin-top: 15px;
+}

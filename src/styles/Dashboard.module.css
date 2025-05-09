@@ -1,0 +1,146 @@
+.container {
+  padding: 20px;
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.8em;
+  color: #333;
+}
+
+.userInfo {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.logoutButton {
+  padding: 8px 15px;
+  background-color: #e53e3e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logoutButton:hover {
+  background-color: #c53030;
+}
+
+.filters {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f8f8f8;
+  border-radius: 6px;
+  border: 1px solid #eee;
+  display: grid; /* Usar grid para alinear elementos */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  align-items: flex-end;
+}
+
+.filterGroup {
+  display: flex; /* Para apilar label e input/select */
+  flex-direction: column;
+}
+
+.filterLabel {
+  font-size: 0.85em;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.filterInput, .filterSelect {
+  width: 100%; /* Ajustar al ancho de la columna del grid */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.resetButton {
+  padding: 8px 15px;
+  background-color: #718096;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  /* Asegurarse de que el botón se alinea bien en el grid */
+  align-self: flex-end;
+}
+
+.resetButton:hover {
+  background-color: #4a5568;
+}
+
+
+.loading, .error {
+  text-align: center;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.loading {
+  color: #3182ce;
+  background-color: #ebf8ff;
+}
+
+.error {
+  color: #e53e3e;
+  background-color: #fff5f5;
+}
+
+.postList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.postItem {
+  background-color: #fefefe;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.postItem:hover {
+  transform: translateY(-3px);
+}
+
+.postId {
+  font-size: 0.8em;
+  color: #718096; /* Gris */
+  margin-bottom: 5px;
+}
+
+.postTitle {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #2d3748; /* Gris oscuro */
+}
+
+.postBody {
+  font-size: 0.9em;
+  color: #4a5568; /* Gris */
+  line-height: 1.4;
+}
